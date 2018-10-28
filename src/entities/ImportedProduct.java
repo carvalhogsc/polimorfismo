@@ -1,6 +1,6 @@
 package entities;
 
-public class ImportedProduct extends Product {
+public final class ImportedProduct extends Product {
 	
 	private Double customsFee;
 	
@@ -32,9 +32,5 @@ public class ImportedProduct extends Product {
 				" (Customs fee: $ " +
 				customsFee +
 				")";
-	}
-
-	
-
-	
+	}	
 }

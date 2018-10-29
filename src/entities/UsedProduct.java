@@ -29,7 +29,7 @@ public final class UsedProduct extends Product {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyy");
 
 		return name + " (used) $ " + 
-				price +
+				String.format("%.2f", price) +
 				" (Manufacture date: " +
 				dateFormat.format(manufactureDate) +
 				")";

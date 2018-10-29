@@ -28,9 +28,9 @@ public final class ImportedProduct extends Product {
 	@Override
 	public String priceTag() {
 		return name + " $ " + 
-				totalPrice() +
+				String.format("%.2f", totalPrice()) +
 				" (Customs fee: $ " +
-				customsFee +
+				String.format("%.2f", customsFee) +
 				")";
 	}	
 }
